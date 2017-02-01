@@ -18,10 +18,14 @@ public class tarroGalletas {
         throw new CloneNotSupportedException();
     }
 
-    public void comeGalleta(){
-        contadorGalletas--;
+    public void comeGalleta(int cantidad){
+        contadorGalletas-=cantidad;
     }
     public void ponGalletas(int cantidad){
         contadorGalletas+=cantidad;
+    }
+
+    public int getContadorGalletas() {
+        return contadorGalletas;
     }
 }
